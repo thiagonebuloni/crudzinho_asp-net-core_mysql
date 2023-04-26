@@ -1,0 +1,104 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+:root {
+  --charcoal: #cdd6f4;
+  --pgreen: #2a9d8f;
+  --yellow: #e9c46a;
+  --orange: #fab387;
+  --sienna: #fab387;
+  --background-color: #1e1e2e;
+  --font: #ffffff
+  
+  --toastify-icon-color-success: #bb86fc;
+  --toastify-text-color-success: #11111b;
+  --toastify-color-success: #11111b;
+  --toastify-color-progress-success: #bb86fc;
+  --toastify-toast-background: #11111b;
+  
+  --toastify-color-error: #e64553;
+  }
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  color: var(--orange);
+  background-color: var(--background-color);
+}
+
+.navbar a {
+  color:var(--orange);
+}
+
+.nav-item a {
+  color: var(--orange);
+}
+
+h1 {
+  color: var(--charcoal);
+}
+
+h4 {
+  color: var(--sienna);
+}
+
+p {
+  color: var(--sienna);
+}
+
+table {
+  color: var(--orange);
+}
+
+.row {
+  color: var(--orange);
+}
+
+.btn {
+  background:  linear-gradient(180deg, rgba(69, 71, 90, 0.85) 0%, rgba(137, 180, 250, 0.05) 100%);
+  color: var(--charcoal);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  color: #1e1e2e;
+  background: linear-gradient(180deg, rgba(250, 179, 135, 0.85) 0%, rgba(179, 127, 95, 0.85) 100%);
+}
+
+.form-control {
+  background-color: var(--charcoal);
+}
+
+.form-control:focus {
+  background-color: var(--charcoal);
+  outline: solid 3px #27274d;
+}
+
+label {
+  color: var(--orange);
+}
+
