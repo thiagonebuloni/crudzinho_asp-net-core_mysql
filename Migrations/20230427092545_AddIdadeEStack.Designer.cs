@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebMvcMysql.Data;
 
@@ -10,9 +11,10 @@ using WebMvcMysql.Data;
 namespace WebMvcMysql.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20230427092545_AddIdadeEStack")]
+    partial class AddIdadeEStack
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,11 +27,6 @@ namespace WebMvcMysql.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("Id");
-
-                    b.Property<string>("Bio")
-                        .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("Bio");
 
                     b.Property<int?>("Idade")
                         .HasColumnType("int")

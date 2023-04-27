@@ -11,13 +11,14 @@ html {
 }
 
 :root {
+  --font: #ffffff;
   --charcoal: #cdd6f4;
   --pgreen: #2a9d8f;
   --yellow: #e9c46a;
   --orange: #fab387;
   --sienna: #fab387;
   --background-color: #1e1e2e;
-  --font: #ffffff
+  --dark: #181825;
   
   --toastify-icon-color-success: #bb86fc;
   --toastify-text-color-success: #11111b;
@@ -65,17 +66,6 @@ h4 {
   color: var(--sienna);
 }
 
-p {
-  color: var(--sienna);
-}
-
-table {
-  color: var(--orange);
-}
-
-.row {
-  color: var(--orange);
-}
 
 .btn {
   background:  linear-gradient(180deg, rgba(69, 71, 90, 0.85) 0%, rgba(137, 180, 250, 0.05) 100%);
@@ -102,3 +92,24 @@ label {
   color: var(--orange);
 }
 
+p {
+  color: var(--sienna);
+}
+
+.table, td{
+  color: var(--orange);
+  border: 1px solid;
+}
+
+th {
+  color: var(--orange);
+  border: 1px solid;
+}
+
+thead {
+  background-color: var(--dark);
+}
+
+.row {
+  color: var(--orange);
+}
